@@ -5,27 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurante</title>
     <link rel="stylesheet" href="style.css">
-    <script src="index.js"></script>
+    
 </head>
 <body>
     
-    <h1>Bienvenido al Restaurante <i>ELIZABETH</i></h1>
-    <form action="" >
+    <h1>Bienvenido al Restaurante <i>MARYELY</i></h1>
+
+    <p>Hola bienvenido  a nuestro sazon de hogar comida 100% hecha con amor de mi mesa hasta tu mesa ven y disfruta puedes ordenar para llevar o comer aqui.</p>
+    <form id="formulario" >
+        <h2 class="text-center">FORMULARIO</h2>
        
-        <input type="text" name="nombre" placeholder="nombre/s">
+        <input type="text" id="nombre" placeholder="nombre/s">
         <br>
         
-        <input type="text" name="nombre" placeholder="apellido/s">
+        <input type="text" id="apellido" placeholder="apellido/s">
         <br>
        
-        <input type="tel" name="telefono" placeholder="telefono/s">
+        <input type="tel" id="telefono" placeholder="telefono/s">
         <br>
         <input type="submit" value="enviar">
+
+        
 
     </form>
     
     
-    <h2>Menu De comidas</h2>
+    <h2 id="comidas" >Menu De comidas</h2>
     <br>
     <section class="container flex text-center">
         <div class="columna">
@@ -40,7 +45,7 @@
         <div class="columna">
             <img src="/img/mole verde.jpg" class="imagen">
             <h2>Mole verde</h2>
-            <p class="precio">$100</p>
+            <p id = "button" class="precio">$100</p>
             <hr>
             <a href="a" class="btn-precio">Comprar</a>
         </div>
@@ -75,7 +80,7 @@
             <a href="a" class="btn-precio">Comprar</a>
         </div>
     </section>
-    <h2>Menu De Bebidas</h2>
+    <h2 id="bebidas">Menu De Bebidas</h2>
     <br>
     <section class="container flex text-center">
         <div class="columnas">
@@ -99,6 +104,6 @@
     
     
     
-
+    <script src="index.js"></script>
 </body>
 </html>
