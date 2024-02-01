@@ -1,109 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restaurante</title>
-    <link rel="stylesheet" href="style.css">
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>RESTAURANTE</title>
 </head>
 <body>
-    
-    <h1>Bienvenido al Restaurante <i>MARYELY</i></h1>
-
-    <p>Hola bienvenido  a nuestro sazon de hogar comida 100% hecha con amor de mi mesa hasta tu mesa ven y disfruta puedes ordenar para llevar o comer aqui.</p>
-    <form id="formulario" >
-        <h2 class="text-center">FORMULARIO</h2>
-       
-        <input type="text" id="nombre" placeholder="nombre/s">
-        <br>
-        
-        <input type="text" id="apellido" placeholder="apellido/s">
-        <br>
-       
-        <input type="tel" id="telefono" placeholder="telefono/s">
-        <br>
-        <input type="submit" value="enviar">
-
-        
-
-    </form>
-    
-    
-    <h2 id="comidas" >Menu De comidas</h2>
+  <header> <h1>RESTAURANTE MARYELY</h1>
+   <h2>Ven a degustar los platillos tipicos de la region.</h2>
+  </header>
+  <div class="registro">
+    <input type="text" name="nombre" placeholder="Nombre/s">
     <br>
-    <section class="container flex text-center">
-        <div class="columna">
-            <img src="/img/arroz.jpg" class="imagen">
-            <h2>Arroz</h2>
-            <p class="precio">$20</p>
-            <hr>
-            <a href="a" class="btn-precio" >Comprar</a>
-        </div>
-       
-
-        <div class="columna">
-            <img src="/img/mole verde.jpg" class="imagen">
-            <h2>Mole verde</h2>
-            <p id = "button" class="precio">$100</p>
-            <hr>
-            <a href="a" class="btn-precio">Comprar</a>
-        </div>
-
-        <div class="columna">
-            <img src="/img/mole rojo.jpg" class="imagen">
-            <h2>Mole rojo</h2>
-            <p class="precio">$100</p>
-            <hr>
-            <a href="a" class="btn-precio">Comprar</a>
-        </div>
-
-        <div class="columna">
-            <img src="/img/chilaquiles.jpg" class="imagen">
-            <h2>Chilaquiles</h2>
-            <p class="precio">$60</p>
-            <hr>
-            <a href="a" class="btn-precio" >Comprar</a>
-        </div>
-        <div class="columna">
-            <img src="/img/carne asada.jpg" class="imagen">
-            <h2>Chilaquiles</h2>
-            <p class="precio">$60</p>
-            <hr>
-            <a href="a" class="btn-precio" >Comprar</a>
-        </div>
-        <div class="columna">
-            <img src="/img/chiles en nogada.jpg" class="imagen">
-            <h2>Chiles en nogada</h2>
-            <p class="precio">$80</p>
-            <hr>
-            <a href="a" class="btn-precio">Comprar</a>
-        </div>
-    </section>
-    <h2 id="bebidas">Menu De Bebidas</h2>
+    <input type="text" name="apellido" placeholder="Apellido/s">
     <br>
-    <section class="container flex text-center">
-        <div class="columnas">
-            <img src="/img/agua de frutas.jpg" class="imagen">
-            <h2>Agua de Frutas</h2>
-            <p class="precio">$40</p>
-            <a href="a" class="btn-precio">Comprar</a>
-        </div>
-
-        <div class="columnas">
-            <img src="/img/refresco cocacola.jpg" class="imagen">
-            <h2>Refresco Coca Cola</h2>
-            <p class="precio">$25</p>
-            <a href="a" class="btn-precio">Comprar</a>
-        </div>
-
-    </section>
-
-
-
+    <input type="tel" name="telefono" placeholder="telefono">
+    <br>
+    <input type="button" value="registrarse">
+  </div>
+  <h2>MENU DE COMIDAS</h2>
+  <div class="container">
     
-    
-    
-    <script src="index.js"></script>
+    <div class="card">
+      <figure>
+        <img src="./img/arroz.jpg" >
+      </figure>
+      <div class="contenido">
+        <h3>Arroz</h3>
+        <p class="precio">$35</p>
+        <div class="agregar">
+        <a href="#">Agregar</a>
+      </div>
+      </div>
+    </div>
+ 
+  <div class="card">
+    <figure>
+      <img src="./img/carne asada.jpg" >
+    </figure>
+    <div class="contenido">
+      <h3>Carne asada</h3>
+      <p class="precio">$125</p>
+      <div class="agregar">
+        <a href="#">Agregar</a>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <figure>
+      <img src="./img/chilaquiles.jpg" >
+    </figure>
+    <div class="contenido">
+      <h3>Chilaquiles</h3>
+      <p class="precio">$65</p>
+      <div class="agregar">
+        <a href="#">Agregar</a>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <figure>
+      <img src="./img/chiles en nogada.jpg" >
+    </figure>
+    <div class="contenido">
+      <h3>Chiles en nogada</h3>
+      <p class="precio">$95</p>
+      <div class="agregar">
+        <a href="#">Agregar</a>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <figure>
+      <img src="./img/mole rojo.jpg" >
+    </figure>
+    <div class="contenido">
+      <h3>Mole rojo</h3>
+      <p class="precio">$150</p>
+      <div class="agregar">
+        <a href="#">Agregar</a>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <figure>
+      <img src="./img/mole verde.jpg" >
+    </figure>
+    <div class="contenido">
+      <h3>Mole verde</h3>
+      <p class="precio">$150</p>
+      <div class="agregar">
+        <a href="#" >Agregar</a>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<h2>MENU DE BEBIDAS</h2>
+<div class="card">
+  <figure>
+    <img src="./img/agua de frutas.jpg" >
+  </figure>
+  <div class="contenido">
+    <h3>agua de frutas</h3>
+    <p class="precio">$45</p>
+    <div class="agregar">
+      <a href="#">Agregar</a>
+    </div>
+  </div>
+</div>
+<div class="card">
+  <figure>
+    <img src="./img/refresco cocacola.jpg" >
+  </figure>
+  <div class="contenido">
+    <h3>Coca cola</h3>
+    <p class="precio">$125</p>
+    <div class="agregar">
+      <a href="#">Agregar</a>
+    </div>
+  </div>
+</div>
+
+<script src="index.js"></script>
 </body>
 </html>

@@ -1,45 +1,49 @@
-p{
-    font-weight: 300;
+
+header{
+   text-align: center;
+    color: black;
+    background: rgb(63,251,200);
+    background: radial-gradient(circle, rgba(63,251,200,1) 55%, rgba(233,70,252,1) 100%);;
+}
+body{
+    background-color: beige;
+}
+.registro{
+    background-color: rgb(235, 211, 233);
+    float: left;
+    flex-direction:column;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 5px;
+}
+.card{
+    float: right;
+    flex: 5%;
+    margin: 5px;
+    border: 2px solid black;
+    text-align: center;
+    flex-grow: 1;
+    flex-shrink: 1;
+    float: right;
+
+}
+.card .agregar{
+    background: rgb(239, 158, 234);
+    padding: 10px;
+}
+.card img{
+    width: 150px;
 }
 h2{
-    color: rgb(48, 52, 52);
+    
+    text-align: center;
+}
+input[type="button"]{
+    background-color: blue;
+    color: white;
 }
 
-.precio{
-    font-size: 50;
-    color: blue;
-}
-.flex{
-    display: flex;
-    flex-wrap: wrap;
-}
-.text-center{
-    text-align: left;
-}
-.columna, .columnas{
-    background: color rgb(228, 228, 228) ;
-    color: #333;
-    border: 1px solid #333 ;
-    margin: 10px;
-    padding: 10px;
-    width: 50;
-    border-radius: 20px;
 
-}
-.imagen{
-    width: 200px;
-}
-
-body{
-    width: 100;
-    height: 100;
-    margin: 30;
-    background-image: url(./img/fondo2.jpg);
-    background-size: cover;
-    perspective: 1000px;
-}
-form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}

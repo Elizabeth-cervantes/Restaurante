@@ -28,7 +28,7 @@ for (let i = 0; i < comidas.length; i++) {
 console.log(opciones);
 
 //Obtenemos el precio de la opcion
-const precio = elemento.querySelector(".precio").textContent;
+const precio = document.querySelector(".precio").textContent;
 
 // añadimos la opcion al array
 opciones.push({
