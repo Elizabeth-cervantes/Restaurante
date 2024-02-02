@@ -1,43 +1,24 @@
 
 const formulario = document.querySelector("#formulario");
-console.log("formulario")
 
-// crear evento
+const opciones =[];
+formulario.addEventListener("submit", (e) => {
+  e.preventDefault();
 
-formulario.addEventListener( "submit", validarFormulario )
+  const nombre = document.querySelector("#nombre").value;
+  const apellido = document.querySelector("#apellido").value;
 
-function validarFormulario(e){
-    e.preventDefault();
-    const nombre = document.querySelector("#nombre").value
-    const apellido= document.querySelector("#apellido").value
+  console.log(`Hola que deseas el dia de hoy, ${nombre} ${apellido}`);
 
-    console.log( `Hola que deseas el dia de hoy, ${nombre} ${apellido}`)
+  // Obtenemos el precio de la opción
+  const precio = document.querySelector(".precio").textContent;
 
-   
-}
-const comidas = ['arroz', 'mole verde', 'mole rojo', 'chilaquiles', 'carne asada', 'chiles en nogada'];
-
-// Creamos un array para almacenar las opciones que va a comprar el cliente
-const opciones = [];
-
-// recorremos los elementos del DOM y añadimos las opciones al array
-
-for (let i = 0; i < comidas.length; i++) {
-   opciones.push(comidas[i]);
-}
-console.log(opciones);
-
-//Obtenemos el precio de la opcion
-const precio = document.querySelector(".precio").textContent;
-
-// añadimos la opcion al array
-opciones.push({
+  // Añadimos la opción al array
+  opciones.push({
     nombre: nombre,
-    precio: precio
+    precio: precio,
   });
 
-  // mostramos las opciones al cliente
+  // Mostramos las opciones al cliente
   console.log(opciones);
-
-
-
+});
