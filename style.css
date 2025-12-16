@@ -10,7 +10,7 @@ body{
 }
 .registro{
     background-color: rgb(235, 211, 233);
-    float: left;
+    text-align: center;
     flex-direction:column;
 }
 .container{
@@ -46,8 +46,13 @@ body{
     object-fit:cover;
 }
 h2{
+    text-align: center;
+    color: red;
+}
+h2.sub{
     
     text-align: center;
+    color:blue;
 }
 input[type="button"]{
     background-color: blue;
