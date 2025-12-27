@@ -6,127 +6,171 @@
   <link rel="stylesheet" href="style.css">
   <title>RESTAURANTE</title>
 </head>
+
 <body>
-  <header> <h1>RESTAURANTE MARYELY</h1>
-   <h2 >Ven a degustar los platillos tipicos de la region.</h2>
+  <header class="header">
+     <h1 class="titulo">RESTAURANTE MARYELY </h1>
+      <p class="subtitulo">Ven a degustar los platillos tipicos de la region.</p>
   </header>
-  <div class="registro" id="formulario">
-    <input type="text" id="nombre" placeholder="Nombre/s">
-    <br>
-    <input type="text" id="apellido" placeholder="Apellido/s">
-    <br>
-    <input type="tel" id="telefono" placeholder="telefono">
-    <br>
-    <input type="button" value="registrarse">
-  </div>
-  <h2 class="sub">MENU DE COMIDAS</h2>
+
+<main class="main">
+<!-- Formulario de registro -->
+  <section class="formulario-registro">
+    <div class="form" id="formulario">
+
+      <h2 class="titulo-form">Registro de cliente </h2>
+
+      <form action="">
+        <label for="nombre"> Nombre</label> 
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="apellido">Apellido</label>
+        <input type="text" id="apellido" name="apellido" required>
+        
+        <label for="telefono">Telefono</label>
+        <input type="tel" name="telefono" id="telefono" required>
+
+        <label for="gmail">Gmail</label>
+        <input type="email" name="gmail" id="gmail" required>
+
+        <button type="submit">Registrarse</button>
+      </form>
+    </div>
+  </section>
+
+
+
+  
+<section class="menu_comidas">
+  <h2 class="sub_comidas">MENU DE COMIDAS</h2>
   <div class="container">
-    
-    <div class="card">
+    <!-- Card 1  -->
+    <article class="card">
       <figure>
-        <img src="./img/arroz.jpg" >
+        <img src="./img/arroz.jpg" alt="Imagen de arroz" >
       </figure>
-      <div class="contenido">
-        <h3>Arroz</h3>
-        <p class="precio">$35</p>
-        <div class="agregar">
-        <a href="#">Agregar</a>
-      </div>
-      </div>
-    </div>
- 
-  <div class="card">
-    <figure>
-      <img src="./img/carne asada.jpg" >
-    </figure>
-    <div class="contenido">
-      <h3>Carne asada</h3>
+
+
+
+      <h3>Arroz</h3>
+      <p class="precio">$35</p>
+      <a href="#" class="agregar">Agregar</a>
+
+    </article>
+
+        <!-- Card 2  -->
+     <article class="card">  
+      <figure>
+         <img src="./img/carne asada.jpg" alt="imagen de carne asada" >
+      </figure>
+
+      <h3> Carne asada</h3>
+
+   
       <p class="precio">$125</p>
-      <div class="agregar">
-        <a href="#">Agregar</a>
-      </div>
-    </div>
-  </div>
-  <div class="card">
-    <figure>
-      <img src="./img/chilaquiles.jpg" >
-    </figure>
-    <div class="contenido">
-      <h3>Chilaquiles</h3>
-      <p class="precio">$65</p>
-      <div class="agregar">
-        <a href="#">Agregar</a>
-      </div>
-    </div>
-  </div>
-  <div class="card">
-    <figure>
-      <img src="./img/chiles en nogada.jpg" >
-    </figure>
-    <div class="contenido">
-      <h3>Chiles en nogada</h3>
-      <p class="precio">$95</p>
-      <div class="agregar">
-        <a href="#">Agregar</a>
-      </div>
-    </div>
-  </div>
-  <div class="card">
-    <figure>
-      <img src="./img/mole rojo.jpg" >
-    </figure>
-    <div class="contenido">
-      <h3>Mole rojo</h3>
-      <p class="precio">$150</p>
-      <div class="agregar">
-        <a href="#">Agregar</a>
-      </div>
-    </div>
-  </div>
-  <div class="card">
-    <figure>
-      <img src="./img/mole verde.jpg" >
-    </figure>
-    <div class="contenido">
-      <h3>Mole verde</h3>
-      <p class="precio">$150</p>
-      <div class="agregar">
-        <a href="#" >Agregar</a>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
-</div>
-</div>
-</div>
+      <a href="#" class="agregar">Agregar</a>
+
+    </article>
+   
+            <!-- Card 3  -->
+            <article class="card">  
+              <figure>
+                 <img src="./img/chilaquiles.jpg" alt="imagen de chilquiles">
+              </figure>
+        
+              <h3> Chilaquiles</h3>
+              <p class="precio">$65</p>
+              <a href="#" class="agregar">Agregar</a>
+        
+            </article>
+           
+             <!-- Card 4 -->
+
+             <article class="card">  
+              <figure>
+                 <img src="./img/chiles en nogada.jpg" alt="imagen de chiles en nogada" >
+              </figure>
+        
+              <h3> Chiles en nogada</h3>
+              <p class="precio">$95</p>
+              <a href="#" class="agregar">Agregar</a>
+        
+            </article>
+  
+             <!-- Card 5-->
+
+             <article class="card">  
+              <figure>
+                 <img src="./img/mole rojo.jpg" alt="imagen de mole rojo" >
+              </figure>
+        
+              <h3> Mole Rojo</h3>
+              <p class="precio">$150</p>
+              <a href="#" class="agregar">Agregar</a>
+        
+            </article>
+
+             <!-- Card 5-->
+
+             <article class="card">  
+              <figure>
+                 <img src="./img/mole verde.jpg" alt="imagen de mole verde">
+              </figure>
+        
+              <h3> Mole Verde</h3>
+              <p class="precio">$150</p>
+              <a href="#" class="agregar">Agregar</a>
+        
+            </article>
+
 </div>
 
-<h2>MENU DE BEBIDAS</h2>
-<div class="card">
-  <figure>
-    <img src="./img/agua de frutas.jpg" >
-  </figure>
-  <div class="contenido">
-    <h3>agua de frutas</h3>
-    <p class="precio">$45</p>
-    <div class="agregar">
-      <a href="#">Agregar</a>
+</section>
+
+            <!-- Menu de bebidas-->
+
+  <section class="menu_bebidas">
+    
+    <div class="container">
+      <h2 class="sub_bebidas">Menu de Bebidas</h2>
+
+      <article class="card">  
+        <figure>
+            <img src="./img/agua de frutas.jpg" alt="image de agua de frutas">
+        </figure>
+
+        <h3> Agua de Frutas</h3>
+        <p class="precio">$45</p>
+        <a href="#" class="agregar">Agregar</a>
+
+        </article>
+
+        <article class="card">  
+          <figure>
+              <img src="./img/refresco cocacola.jpg" alt="imagen de coca cola">
+          </figure>
+    
+          <h3> Coca Cola</h3>
+          <p class="precio">$45</p>
+          <a href="#" class="agregar">Agregar</a>
+    
+        </article>
+
     </div>
-  </div>
-</div>
-<div class="card">
-  <figure>
-    <img src="./img/refresco cocacola.jpg" >
-  </figure>
-  <div class="contenido">
-    <h3>Coca cola</h3>
-    <p class="precio">$125</p>
-    <div class="agregar">
-      <a href="#">Agregar</a>
-    </div>
-  </div>
-</div>
+
+  </section>
+
+</main>
+
+              <!-- Pie de pagina-->
+
+<footer class="termino_pagina">
+  <p>&copy; 2026 Restaurante Maryeli </p>
+
+</footer>
+
+
+
 
 <script src="index.js"></script>
 </body>
